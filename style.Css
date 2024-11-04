@@ -14,15 +14,20 @@ body {
   display: flex;
   flex-direction: row;
 }
+.Logo {
+  display: block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.005);
+}
 .blaBla {
   padding: 10px;
   margin: 0;
-  background-color: aliceblue;
+  background-color: #dbd9e1;
   width: 138%;
   height: 30%;
 }
 .SignUp {
-  background-color: bisque;
+  background-color: #af5754;
   width: 138%;
   height: 45%;
   margin: 0;
@@ -31,7 +36,8 @@ body {
 form {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .miniC1 {
   display: flex;
@@ -46,7 +52,7 @@ form {
   gap: 45px;
 }
 .logIn {
-  background-color: beige;
+  background-color: #dbd9e1;
   width: 138%;
   height: 25%;
   margin: 0;
@@ -79,25 +85,29 @@ input {
   line-height: 147.6%;
   padding-top: 0.825rem;
   padding-bottom: 0.5rem;
+  touch-action: manipulation;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
 }
 input::placeholder {
   color: rgba(0, 0, 0, 0.543);
 }
 input:hover {
-  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+  background-color: #6676a1;
+  border-bottom: 3px solid #3b2454;
 }
 
 input:focus {
   outline: none;
-  top: 0;
-  margin-bottom: 16px;
-  border-bottom: 3px solid rgb(101, 12, 169);
+  border-bottom: 3px solid #3b2454;
 }
 
 /* CSS */
 button {
-  background-color: #af1af9;
-  border: 1px solid #820fb8;
+  background-color: #5058a2;
+  border: 2px solid #5058a2;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
   box-sizing: border-box;
