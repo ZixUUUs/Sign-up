@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.blaBla {
+  padding: 10px;
+  margin: 0;
+  background-color: aliceblue;
+  width: 138%;
+  height: 30%;
+}
+.SignUp {
+  background-color: bisque;
+  width: 138%;
+  height: 45%;
+  margin: 0;
+  padding: 10px;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.miniC1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 45px;
+}
+.miniC2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 45px;
+}
+.logIn {
+  background-color: beige;
+  width: 138%;
+  height: 25%;
+  margin: 0;
+  padding: 10px;
+}
+h1 {
+  margin-top: 0;
+  font-size: 36px;
+  text-align: center;
+}
+label {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: block;
+  margin: 3px;
+}
+span {
+  color: red;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-bottom: 2px solid gray;
+  border-radius: 3px;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.0625rem;
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.543);
+}
+input:hover {
+  background-color: whitesmoke;
+}
+
+input:focus {
+  outline: none;
+  top: 0;
+  margin-bottom: 16px;
+  border-bottom: 3px solid rgb(101, 12, 169);
+}
+
+/* CSS */
+button {
+  background-color: #af1af9;
+  border: 1px solid #820fb8;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  width: 20vw;
+  margin-top: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 10px 30px;
+  }
+}
+a {
+  text-decoration: none;
+  color: #009bfc;
+  font-size: smaller;
+}
+.msg {
+  font-size: small;
+}
