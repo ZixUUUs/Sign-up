@@ -3,16 +3,30 @@
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
+  background-color: #8d8dc2;
   font-family: "Montserrat", sans-serif;
 }
 .container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 500px 800px;
+}
+.mainS {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 290px 290px 290px;
+  gap: 15px;
+}
+.Guitare {
+  border-radius: 2px;
 }
 .Logo {
   display: block;
@@ -20,46 +34,50 @@ body {
   background-color: rgba(0, 0, 0, 0.005);
 }
 .blaBla {
-  padding: 10px;
-  margin: 0;
-  background-color: #dbd9e1;
-  width: 138%;
-  height: 30%;
+  grid-area: 1/2/2/3;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 5px;
+  color: #fff;
+  background-color: #5058a2;
+  box-sizing: border-box;
+  height: 290px;
+  margin-right: 10px;
 }
 .SignUp {
+  grid-area: 2/2/3/3;
   background-color: #af5754;
-  width: 138%;
-  height: 45%;
-  margin: 0;
-  padding: 10px;
+  border-radius: 5px;
+  height: 290px;
+  margin: 5px;
+  margin-right: 10px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-evenly;
 }
-.miniC1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 45px;
-}
-.miniC2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 45px;
-}
+
 .logIn {
-  background-color: #dbd9e1;
-  width: 138%;
-  height: 25%;
-  margin: 0;
-  padding: 10px;
+  grid-area: 3/2/4/3;
+  background-color: #5058a2;
+  border-radius: 5px;
+  height: 260px;
+  margin: 5px;
+  padding: 30px;
+  margin-right: 10px;
+  box-sizing: border-box;
 }
 h1 {
+  color: #fff;
   margin-top: 0;
+  margin: 2px;
+  padding: 5px;
   font-size: 36px;
   text-align: center;
 }
@@ -78,7 +96,7 @@ input {
   border: none;
   border-bottom: 2px solid gray;
   border-radius: 3px;
-  width: 100%;
+  padding: 80px;
   height: 2rem;
   font-size: 1.0625rem;
   padding-left: 0.875rem;
@@ -106,8 +124,8 @@ input:focus {
 
 /* CSS */
 button {
-  background-color: #5058a2;
-  border: 2px solid #5058a2;
+  background-color: #6676a1;
+  padding: 5px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
   box-sizing: border-box;
